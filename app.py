@@ -140,7 +140,7 @@ def solve_skill_partition_multi_group(employees, M, token):
 
 def main():
     st.title("Amplify AE で社員分割 (スキル均等化)")
-    token = 'Your_Amplify_AE_token'
+    token = st.secrets["Your_Amplify_AE_token"]
 
     # CSVアップロード
     uploaded_file = st.file_uploader("社員データCSVをアップロード", type=["csv"])
